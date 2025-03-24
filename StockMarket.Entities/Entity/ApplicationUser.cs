@@ -3,7 +3,7 @@ using StockMarket.Entities.Abstract;
 
 namespace StockMarket.Entities.Entity
 {
-    public class ApplicationUser:IdentityUser, IEntity
+    public class ApplicationUser : IdentityUser, IEntity
     {
         public string FullName { get; set; } = default!;
         public ICollection<UserStocks>? UserStocks { get; set; }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using StockMarket.Entities.Entity;
 using StockMarket.Repositories.RepositoryEntities.ApplicationRoleClaims;
 using StockMarket.Repositories.RepositoryEntities.ApplicationUserClaims;

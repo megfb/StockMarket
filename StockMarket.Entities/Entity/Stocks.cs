@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using StockMarket.Entities.Abstract;
+﻿using StockMarket.Entities.Abstract;
 
 namespace StockMarket.Entities.Entity
 {
-    public class Stocks:IEntity
+    public class Stocks : IEntity
     {
         public int Id { get; set; }
         public string Symbol { get; set; } = default!;

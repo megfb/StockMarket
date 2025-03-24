@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using StockMarket.Entities.Abstract;
+﻿using StockMarket.Entities.Abstract;
 
 namespace StockMarket.Entities.Entity
 {
-    public class UserStocks:IEntity
+    public class UserStocks : IEntity
     {
         public int Id { get; set; }
         public ApplicationUser? User { get; set; }
