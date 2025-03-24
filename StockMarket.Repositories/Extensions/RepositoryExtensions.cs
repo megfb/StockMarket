@@ -16,6 +16,10 @@ namespace StockMarket.Repositories.Extensions
             services.AddDbContext<AppDbContext>(options =>
             {
                 var ConnectionString = configuration.GetSection(ConnectionStringOption.Key).Get<ConnectionStringOption>();
+                //options.UseSqlServer(ConnectionString!.SqlServer, sqlServerOptionsAction =>
+                //{
+                //    sqlServerOptionsAction.MigrationsAssembly(typeof(RepositoryAssembly).Assembly.FullName);
+                //});
                 options.UseNpgsql(ConnectionString!.PostgreSql, postgreSqlServerOptionsAction =>
                 {
                     postgreSqlServerOptionsAction.MigrationsAssembly(typeof(RepositoryAssembly).Assembly.FullName);
