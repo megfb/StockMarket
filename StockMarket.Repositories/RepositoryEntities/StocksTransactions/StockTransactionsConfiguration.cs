@@ -7,9 +7,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using StockMarket.Entities.Entity;
 
-namespace StockMarket.Repositories.RepositoryEntities.UsersNotifications.StocksTransactions
+namespace StockMarket.Repositories.RepositoryEntities.StocksTransactions
 {
-    public class StockTansactionsConfiguration : IEntityTypeConfiguration<StockTransactions>
+    public class StockTransactionsConfiguration : IEntityTypeConfiguration<StockTransactions>
     {
         public void Configure(EntityTypeBuilder<StockTransactions> builder)
         {

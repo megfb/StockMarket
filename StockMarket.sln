@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockMarket.Entities", "Sto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockMarket.Repositories", "StockMarket.Repositories\StockMarket.Repositories.csproj", "{8054B3B5-015D-4FF8-B9AA-C503D40F9DC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockMarket.Api", "StockMarket.Api\StockMarket.Api.csproj", "{5F1246E8-8BBE-4CA0-A52B-2BE74A0EA937}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8054B3B5-015D-4FF8-B9AA-C503D40F9DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8054B3B5-015D-4FF8-B9AA-C503D40F9DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8054B3B5-015D-4FF8-B9AA-C503D40F9DC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F1246E8-8BBE-4CA0-A52B-2BE74A0EA937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F1246E8-8BBE-4CA0-A52B-2BE74A0EA937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F1246E8-8BBE-4CA0-A52B-2BE74A0EA937}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F1246E8-8BBE-4CA0-A52B-2BE74A0EA937}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
