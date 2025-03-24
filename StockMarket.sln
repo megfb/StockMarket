@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35828.75 d17.13
+VisualStudioVersion = 17.13.35828.75
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockMarket.Entities", "StockMarket.Entities\StockMarket.Entities.csproj", "{EEE3988A-B1EE-40D8-96DC-E801DC510E4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockMarket.Repositories", "StockMarket.Repositories\StockMarket.Repositories.csproj", "{8054B3B5-015D-4FF8-B9AA-C503D40F9DC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{EEE3988A-B1EE-40D8-96DC-E801DC510E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEE3988A-B1EE-40D8-96DC-E801DC510E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEE3988A-B1EE-40D8-96DC-E801DC510E4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8054B3B5-015D-4FF8-B9AA-C503D40F9DC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8054B3B5-015D-4FF8-B9AA-C503D40F9DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8054B3B5-015D-4FF8-B9AA-C503D40F9DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8054B3B5-015D-4FF8-B9AA-C503D40F9DC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
