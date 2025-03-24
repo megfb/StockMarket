@@ -6,7 +6,7 @@ namespace StockMarket.Repositories.GenericRepositoryBase
     {
         IQueryable<T> GetAll();
         ValueTask<T> GetByIdAsync(int id);
-        ValueTask<T> AddAsync(T Entity);
+        ValueTask AddAsync(T Entity);
         void Update(T Entity);
         void Delete(T Entity);
 
