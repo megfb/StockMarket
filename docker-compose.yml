@@ -1,0 +1,33 @@
+services:
+  stockmarket-api:
+    build:
+        dockerfile: StockMarket.Api/Dockerfile
+    ports:
+      - "8090:8080"
+    depends_on:
+      - db
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Username=postgres;Password=sifre;Database=StockMarket
+    networks:
+      - stockmarket-network
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: sifre
+      POSTGRES_DB: StockMarket
+    ports:
+      - "5432:5432"
+    networks:
+      - stockmarket-network
+    volumes:
+      - stockmarket-db-data:/var/lib/postgresql/data
+
+networks:
+  stockmarket-network:
+    driver: bridge
+
+volumes:
+  stockmarket-db-data:

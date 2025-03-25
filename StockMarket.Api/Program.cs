@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.SignalR;
+using StockMarket.Api.Hubs;
 using StockMarket.Repositories.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,7 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddIdentityService(builder.Configuration);
 builder.Services.AddRepositories(builder.Configuration);
-
+builder.Services.AddSignalR();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -21,6 +23,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.MapHub<MyHub>("/MyHub");
 
 app.UseAuthorization();
 
